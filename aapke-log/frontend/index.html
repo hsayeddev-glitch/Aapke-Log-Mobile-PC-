@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAPKE LOG - AAPKE LIYE, HAMESHA | Civic-Tech & AI Problem Solving Platform</title>
+  
+  <!-- Tailwind CSS CDN with Custom Palette Configuration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            civic: {
+              primary: '#173F5F',
+              hover: '#1F547D',
+              teal: '#147D86',
+              'soft-teal': '#53B7B3',
+              green: '#2E7D5B',
+              bmc: '#1769AA',
+              industry: '#B7791F',
+              society: '#5B6675',
+              citizen: '#3B7C82',
+              admin: '#173F5F',
+              bg: '#F7F9F8',
+              surface: '#FFFFFF',
+              text: '#17212B',
+              muted: '#667085',
+              border: '#DDE4E8',
+              'threat-high': '#C62828',
+              'threat-medium': '#B7791F',
+              'threat-low': '#2E7D5B',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="bg-[#F7F9F8] text-[#17212B] min-h-screen flex flex-col antialiased selection:bg-[#53B7B3] selection:text-white">
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- Navigation Bar Mount -->
+  <div id="navbar-root"></div>
+
+  <!-- Main Content Container -->
+  <main class="flex-grow max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8">
+    <div id="main-content">
+      <!-- Injected dynamically by app.js -->
+    </div>
+  </main>
+
+  <!-- Modal Mount Point -->
+  <div id="modal-root"></div>
+
+  <!-- Footer -->
+  <footer class="bg-[#173F5F] text-slate-300 text-xs py-8 border-t border-[#1F547D] mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div>
+        <p class="font-extrabold text-white text-sm tracking-tight">AAPKE LOG — AAPKE LIYE, HAMESHA</p>
+        <p class="text-[11px] text-[#53B7B3] mt-0.5 font-medium">“People know their problems. Aapke Log finds who can solve them.”</p>
+        <p class="text-[10px] text-slate-400 mt-1">
+          Mumbai-focused prototype inspired by publicly available BMC civic complaint data. Smart India Hackathon 2026 (SIH26043).
+        </p>
+      </div>
+      <div class="text-[11px] text-slate-400 space-y-1">
+        <p>Verified Municipal & Academic Collaboration Network</p>
+        <p class="text-slate-300">Strict Rule: AI Recommends. Verified Organizations Decide and Act.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Module Script -->
+  <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>
